@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  todo_app:
+    build: 
+      context: .
+      dockerfile: Dockerfile 
+    image: ibrahim4529/todo-app-jwt
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/code
